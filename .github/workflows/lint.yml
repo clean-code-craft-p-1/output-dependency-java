@@ -25,5 +25,7 @@ jobs:
   
       - name: PMD
         run: |
-          ./pmd-bin-6.55.0/bin/run.sh pmd -d colorcoder/ -R rulesets/java/quickstart.xml
+          ./pmd-bin-6.55.0/bin/run.sh pmd -d tshirts/ -R rulesets/java/quickstart.xml
+          ./pmd-bin-6.55.0/bin/run.sh pmd -d misaligned/ -R rulesets/java/quickstart.xml
+          ./pmd-bin-6.55.0/bin/run.sh pmd -d weatherreport/ -R rulesets/java/quickstart.xml
         continue-on-error: true
